@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(137, 137, 215);
+        font-family: sans-serif;
+      }
+
+      .loginbox {
+        width: 350px;
+        height: 420px;
+        background: blueviolet;
+        color: white;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 70px 30px;
+      }
+
+      .avatar {
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25%;
+        position: absolute;
+        top: 0px;
+        left: 42%;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        padding: 0 0 20 px;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .loginbox p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .loginbox input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      ::placeholder {
+        color: rgba(245, 245, 245, 0.365);
+      }
+      .loginbox input[type="text"],
+      input[type="password"] {
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: white;
+        font-size: 18px;
+      }
+
+      .loginbox input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: red;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+      }
+
+      .loginbox input[type="submit"]:hover {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+      }
+
+      .loginbox a {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: darkgrey;
+      }
+
+      .loginbox a:hover {
+        color: #ffc107;
+      }
+    </style>
+
+    <body>
+      <div class="loginbox">
+        <img src="loginavatar.png" class="avatar" />
+        <h1>Login Here</h1>
+        <form>
+          <p>Username</p>
+          <input type="text" name="" placeholder="Enter Username" required />
+          <p>Password</p>
+          <input
+            type="Password"
+            name=""
+            placeholder="Enter Password"
+            required
+          />
+          <input type="submit" name="" value="Login" /><br />
+          <a href="#">Forget your Password?</a><br />
+          <a href="../Registration page/Registration.html"
+            >Don't have account?</a
+          >
+        </form>
+      </div>
+    </body>
+  </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/98f719dc23.js" crossorigin="anonymous"></script>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: burlywood
+        }
+        
+        form {
+            padding: 10px;
+            line-height: 10px
+        }
+        
+        main {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background: beige;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            /*border-radius: 500%;*/
+            margin-top: 15px;
+        }
+        
+        p {
+            font-family: Courier New;
+            font-size: large;
+            border-bottom: 1.50px solid black;
+            color: rgb(40, 176, 142);
+        }
+        option{
+            background-color: yellow;
+
+        }
+        input{
+            height: 45px;
+            width: 250px;
+            border-style: hidden;
+            color: white;
+            background-color: rgb(105, 45, 105);
+            border-radius: 15px;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+        ::placeholder{
+            color: rgba(245, 245, 245, 0.54);
+        }
+        i{
+            color:blue;
+            font-size: 1.7rem;
+        }
+        
+        button {
+            height: 50px;
+             width: 200px;
+            margin: 20px auto;
+            background-color: yellow;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        button:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+
+
+<body>
+   
+
+    <div class="imgcontainer">
+        <img src="login_icon.png" width="170px">
+         </div>
+         <p style="color:rgb(66, 77, 175); 
+         font-size:49.9px; 
+         font-family: 'Times New Roman', Times, serif; 
+         font-weight:bold;
+         text-align:center;
+         padding: 15px;">
+                 Registration form
+         
+             </p>
+
+        <form align="center">
+            
+
+            <pre> 
+<br>
+<i class="fa-solid fa-person"></i>  <input type="text" name="FirstName" value="" placeholder=" First Name"required>  <input type="text" name="LastName" value=""placeholder="Last Name" required><br>
+<i class="fa-solid fa-envelope"></i>  <input type="email" id="email" value="" placeholder="Email" required><br>
+<i class="fa-solid fa-user">  </i><input type="text" id="usrname" name="usrname"placeholder="Username Name" required><br>
+<i class="fa-solid fa-lock">  </i><input type="password" name="psw" placeholder="Password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+<button type="submit"> Submit</button>  <button type="button " class="cancelbtn ">Reset</button><br>
+ 
+<label style="color:black">* Must be filled out</label>
+
+</style>
+</p>
+</pre>
+            
+            <span class="Password"><a href="# ">Forget password?</a></span>
+            <span><a href="../Login page/Login.html">Already register?</a></span>
+    </div>
+    </form>
+
+    <div id="cursor" class="cursor--moved cursor--hidden" style="top: 231px; left: 1036px;"></div>
+
+    <script>
+        var myInput = document.getElementById("Password");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+
+        function
+        validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+        myInput.onfocus = function() {
+            document.getElementById("message").style.display = "block";
+        }
+        myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+        }
+        myInput.onkeyup = function() {
+            var lowerCaseLetters = /[a-z]/g;
+            if (myInput.value.match(lowerCaseLetters)) {
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+            } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+            }
+            var upperCaseLetters = /[A-Z]/g;
+            if (myInput.value.match(upperCaseLetters)) {
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+            } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+            }
+            var numbers = /[0-9]/g;
+            if (myInput.value.match(numbers)) {
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+            } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+            }
+            if (myInput.value.length >=
+                8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+            } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
